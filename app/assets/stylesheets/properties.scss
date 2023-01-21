@@ -1,0 +1,23 @@
+.property-thumb{
+ height: 170px;
+}
+.property-main-photo{
+    height: 500px;
+    background-size: cover;
+    margin-bottom: 40px;
+}
+
+#prop-details{
+    height: 100px;
+    overflow: hidden;
+
+ &.open{
+    heigth: auto;
+ }
+}
+#agent_details{
+
+}
+.image{
+    border-radius: 50%;
+}

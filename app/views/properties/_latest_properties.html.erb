@@ -1,0 +1,15 @@
+<%@properties.each do |property|%>
+     <div class="col-4 text-center">
+     <div class="property border">
+        <%= image_tag property.photo.variant(resize_to_fit:[400, 200]) %>
+        <h3 class="h5"><%= link_to property.name, property_path(property), class: "text-dark"%></h3>
+        <div class="amenities p-3">
+          <span class="mr-4"><i class="fa-solid fa-bed text-muted"></i> <%= property.rooms%></span>
+          <span class="mr-2"><i class="fa-solid fa-restroom text-muted"></i> <%= property.bathrooms%></span>
+          <span class="mr-2"><i class="fa-solid fa-car text-muted"></i> <%= property.parking_spaces%></span>
+          </div>
+        <p class="mt-3"><%= property.address%></p>
+      </div>
+    </div>
+<%end%>
+  
